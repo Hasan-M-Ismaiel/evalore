@@ -1,0 +1,454 @@
+
+
+/* =========================================
+   EVALORE - NATURE SECTION
+========================================= */
+
+.evalore-nature-section {
+    background: #f3f1e9;
+    overflow: hidden;
+}
+
+.evalore-nature-section .container-fluid {
+    padding: 0;
+}
+
+.evalore-nature-image {
+    position: relative;
+    min-height: 650px;
+    height: 100%;
+    overflow: hidden;
+    background: #d9d8ca;
+}
+
+.evalore-nature-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 1.2s ease;
+}
+
+.evalore-nature-image:hover img {
+    transform: scale(1.04);
+}
+
+.evalore-nature-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(24, 29, 21, 0.65),
+        rgba(24, 29, 21, 0.05) 55%,
+        transparent
+    );
+}
+
+.nature-image-caption {
+    position: absolute;
+    z-index: 2;
+    left: 65px;
+    bottom: 55px;
+    color: #fff;
+}
+
+.nature-image-caption span {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #d0b77c;
+    font-weight: 600;
+}
+
+.nature-image-caption div {
+    width: 45px;
+    height: 1px;
+    background: #c3a66b;
+    margin: 17px 0;
+}
+
+.nature-image-caption p {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-style: italic;
+    margin: 0;
+    color: #fff;
+}
+
+/* Content */
+
+.evalore-nature-content {
+    min-height: 650px;
+    height: 100%;
+    padding: 95px 11% 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f3f1e9;
+}
+
+.nature-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: #9a865a;
+    margin-bottom: 30px;
+}
+
+.nature-eyebrow span {
+    width: 30px;
+    height: 1px;
+    background: #b49a62;
+}
+
+.evalore-nature-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 43px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #34382d;
+    margin-bottom: 28px;
+}
+
+.evalore-nature-content h2 em {
+    display: block;
+    color: #9b895f;
+    font-weight: 400;
+}
+
+.nature-divider {
+    width: 55px;
+    height: 2px;
+    background: #b39a61;
+    margin-bottom: 30px;
+}
+
+.nature-description {
+    font-size: 14px;
+    line-height: 2;
+    color: #77786d;
+    margin-bottom: 17px;
+    max-width: 520px;
+}
+
+.nature-ingredients {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    margin: 25px 0 35px;
+    max-width: 460px;
+}
+
+.nature-ingredients div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-bottom: 1px solid #dedbce;
+    padding-bottom: 12px;
+}
+
+.nature-ingredients span {
+    font-family: Georgia, serif;
+    font-size: 11px;
+    color: #b39a61;
+}
+
+.nature-ingredients p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #4c5043;
+}
+
+.nature-signature {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 17px;
+    border-left: 2px solid #b39a61;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #77745f;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    .evalore-nature-image {
+        min-height: 500px;
+    }
+
+    .evalore-nature-content {
+        min-height: auto;
+        padding: 75px 9%;
+    }
+
+    .evalore-nature-content h2 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 767px) {
+    .evalore-nature-image {
+        min-height: 400px;
+    }
+
+    .nature-image-caption {
+        left: 30px;
+        bottom: 30px;
+    }
+
+    .evalore-nature-content {
+        padding: 60px 28px;
+    }
+
+    .evalore-nature-content h2 {
+        font-size: 34px;
+    }
+
+    .nature-ingredients {
+        gap: 17px 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .evalore-nature-content h2 {
+        font-size: 29px;
+    }
+
+    .nature-ingredients {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+   EVALORE - INGREDIENT HIGHLIGHT
+========================================= */
+
+.evalore-ingredients-section {
+    background: #eae9df;
+    padding: 115px 0;
+    overflow: hidden;
+}
+
+.evalore-ingredients-content {
+    padding: 20px 45px 20px 0;
+}
+
+.ingredients-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: #99865c;
+    margin-bottom: 28px;
+}
+
+.ingredients-eyebrow span {
+    width: 30px;
+    height: 1px;
+    background: #b39a61;
+}
+
+.evalore-ingredients-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 43px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #34382d;
+    margin-bottom: 27px;
+}
+
+.evalore-ingredients-content h2 em {
+    display: block;
+    color: #99865c;
+    font-weight: 400;
+}
+
+.ingredients-divider {
+    width: 55px;
+    height: 2px;
+    background: #b39a61;
+    margin-bottom: 28px;
+}
+
+.evalore-ingredients-content > p {
+    font-size: 14px;
+    line-height: 2;
+    color: #77786d;
+    margin-bottom: 18px;
+    max-width: 440px;
+}
+
+.ingredients-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
+    padding: 15px 23px;
+    border: 1px solid #b39a61;
+    color: #665b40;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.ingredients-link:hover {
+    background: #a58e5c;
+    color: #fff;
+    border-color: #a58e5c;
+}
+
+.ingredients-link .fa {
+    transition: transform 0.3s ease;
+}
+
+.ingredients-link:hover .fa {
+    transform: translateX(5px);
+}
+
+.ingredients-signature {
+    margin-top: 38px;
+    padding-left: 16px;
+    border-left: 2px solid #b39a61;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #85806c;
+}
+
+/* Gallery */
+
+.evalore-ingredients-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding-left: 25px;
+}
+
+.ingredient-card {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    background: #d5d4c8;
+}
+
+.ingredient-card-large {
+    height: 270px;
+}
+
+.ingredient-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.ingredient-card:hover img {
+    transform: scale(1.07);
+}
+
+.ingredient-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(25, 29, 22, 0.78),
+        rgba(25, 29, 22, 0.05) 75%
+    );
+}
+
+.ingredient-overlay {
+    position: absolute;
+    z-index: 2;
+    left: 22px;
+    right: 15px;
+    bottom: 20px;
+}
+
+.ingredient-overlay span {
+    display: block;
+    color: #d2ba80;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.ingredient-overlay h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    .evalore-ingredients-section {
+        padding: 85px 0;
+    }
+
+    .evalore-ingredients-content {
+        padding: 0 0 50px;
+    }
+
+    .evalore-ingredients-gallery {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .evalore-ingredients-section {
+        padding: 65px 0;
+    }
+
+    .evalore-ingredients-content h2 {
+        font-size: 36px;
+    }
+
+    .ingredient-card,
+    .ingredient-card-large {
+        height: 210px;
+    }
+
+    .ingredient-overlay {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .ingredient-overlay h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 400px) {
+    .evalore-ingredients-gallery {
+        gap: 9px;
+    }
+
+    .ingredient-card,
+    .ingredient-card-large {
+        height: 175px;
+    }
+
+    .ingredient-overlay span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .ingredient-overlay h3 {
+        font-size: 15px;
+    }
+}

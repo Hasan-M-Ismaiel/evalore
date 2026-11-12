@@ -1,0 +1,137 @@
+
+/* =========================================
+   EVALORE - MORE BEAUTY IS ON THE WAY
+========================================= */
+
+.evalore-coming-section {
+    position: relative;
+    overflow: hidden;
+    padding: 115px 0 120px;
+    background: #eeede5;
+    color: #33372b;
+}
+
+.evalore-coming-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.evalore-coming-content {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.coming-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 19px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(163, 139, 79, 0.4);
+    color: #987e43;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.coming-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ad9254;
+}
+
+.evalore-eyebrow {
+    display: block;
+    color: #9b8553;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.evalore-coming-content h2 {
+    font-family: Georgia, serif;
+    font-size: 53px;
+    line-height: 1.18;
+    font-weight: 400;
+    color: #33372b;
+    margin-bottom: 25px;
+}
+
+.coming-divider {
+    width: 55px;
+    height: 1px;
+    background: #ae955b;
+    margin: 0 auto 28px;
+}
+
+.coming-intro {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #77714f;
+    margin-bottom: 18px;
+}
+
+.coming-description {
+    max-width: 610px;
+    margin: 0 auto 24px;
+    color: #77766c;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.coming-signature {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #9b8553;
+    letter-spacing: 0.3px;
+}
+ 
+.coming-decoration {
+    position: absolute;
+    right: 5%;
+    bottom: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+    pointer-events: none;
+}
+/*
+.decoration-letter {
+    font-family: Georgia, serif;
+    font-size: 430px;
+    line-height: 0.8;
+    color: #33372b;
+}
+
+.decoration-text {
+    font-size: 10px;
+    letter-spacing: 5px;
+} */
+
+
+/* 
+.coming-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.coming-brand-seal {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+    .coming-brand-seal {
+        width: 155px;
+        height: 155px;
+    }
+}

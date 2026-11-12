@@ -1,0 +1,830 @@
+/* =========================================
+   EVALORE — OUR INGREDIENTS
+========================================= */
+
+.ev-ingredients-page {
+    width: 100%;
+    overflow: hidden;
+    background: #f3f1e9;
+    color: #343a2f;
+}
+
+.ev-ingredients-page * {
+    box-sizing: border-box;
+}
+
+.ev-ingredients-page img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ev-ingredients-page a {
+    text-decoration: none;
+}
+
+.ev-ing-kicker {
+    display: inline-block;
+    color: #a28b59;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.8px;
+    line-height: 1.8;
+}
+
+.ev-ing-gold-line {
+    width: 55px;
+    height: 1px;
+    margin: 27px 0;
+    background: #b39a61;
+}
+
+
+/* =========================================
+   1. HERO
+========================================= */
+
+.ev-ing-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 650px;
+    height: 82vh;
+    max-height: 820px;
+    overflow: hidden;
+    background: #30372d;
+}
+
+.ev-ing-hero-image {
+    position: absolute;
+    inset: 0;
+    background-image: url("../images/botanical.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.ev-ing-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(29, 35, 28, .88) 0%,
+            rgba(29, 35, 28, .65) 45%,
+            rgba(29, 35, 28, .12) 100%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(25, 30, 24, .45),
+            transparent 50%
+        );
+}
+
+.ev-ing-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 80px 8%;
+    color: #f3f1e9;
+}
+
+.ev-ing-hero-content .ev-ing-eyebrow {
+    display: block;
+    margin-bottom: 28px;
+    color: #c9b47f;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+.ev-ing-hero-content h1 {
+    margin: 0;
+    color: #f3f1e9;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6.5vw, 79px);
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: -1.5px;
+}
+
+.ev-ing-hero-content h1 em {
+    color: #c9b47f;
+    font-weight: 400;
+}
+
+.ev-ing-hero-content p {
+    margin: 0;
+    color: rgba(243, 241, 233, .85);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.ev-ing-line {
+    width: 60px;
+    height: 1px;
+    margin: 32px 0 24px;
+    background: #c4aa70;
+}
+
+.ev-ing-hero-bottom {
+    position: absolute;
+    z-index: 2;
+    right: 8%;
+    bottom: 27px;
+    left: 8%;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(243, 241, 233, .65);
+    font-size: 9px;
+    letter-spacing: 2.5px;
+}
+
+
+/* =========================================
+   2. INTRODUCTION
+========================================= */
+
+.ev-ing-intro {
+    padding: 110px 8% 115px;
+    background: #f3f1e9;
+    text-align: center;
+}
+
+.ev-ing-intro-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ev-ing-intro h2 {
+    margin: 23px 0;
+    color: #343a2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 57px);
+    font-weight: 400;
+    line-height: 1.28;
+}
+
+.ev-ing-intro h2 em {
+    color: #9c8758;
+    font-weight: 400;
+}
+
+.ev-ing-intro .ev-ing-gold-line {
+    margin: 30px auto;
+}
+
+.ev-ing-intro p {
+    max-width: 690px;
+    margin: 0 auto;
+    color: #77786d;
+    font-size: 14px;
+    line-height: 2.15;
+}
+
+.ev-ing-intro-signature {
+    display: block;
+    margin-top: 32px;
+    color: #9c8758;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+/* =========================================
+   3. FEATURE SECTIONS
+========================================= */
+
+.ev-ing-feature {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    min-height: 610px;
+    background: #e9e8df;
+}
+
+.ev-ing-feature-image {
+    position: relative;
+    min-height: 610px;
+    overflow: hidden;
+}
+
+.ev-ing-feature-image img {
+    position: absolute;
+    inset: 0;
+    transition: transform .8s ease;
+}
+
+.ev-ing-feature-image:hover img {
+    transform: scale(1.035);
+}
+
+.ev-ing-feature-image::after {
+    content: "";
+    position: absolute;
+    inset: 35% 0 0;
+    background: linear-gradient(
+        0deg,
+        rgba(26, 32, 25, .68),
+        transparent
+    );
+}
+
+.ev-ing-image-number {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 35px;
+    color: #f3f1e9;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.ev-ing-image-caption {
+    position: absolute;
+    z-index: 2;
+    bottom: 48px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #f3f1e9;
+}
+
+.ev-ing-image-caption span {
+    color: #c9b47f;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+}
+
+.ev-ing-image-caption strong {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.ev-ing-feature-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 12%;
+}
+
+.ev-ing-feature-content h2 {
+    max-width: 480px;
+    margin: 22px 0 0;
+    color: #343a2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 3.7vw, 46px);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ev-ing-feature-content h2 em {
+    color: #9c8758;
+    font-weight: 400;
+}
+
+.ev-ing-feature-content > p {
+    margin: 0 0 18px;
+    color: #77786d;
+    font-size: 14px;
+    line-height: 2.05;
+}
+
+.ev-ing-feature-note {
+    margin-top: 23px;
+    padding-left: 18px;
+    border-left: 1px solid #b39a61;
+}
+
+.ev-ing-feature-note span {
+    display: block;
+    margin-bottom: 9px;
+    color: #9c8758;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.ev-ing-feature-note strong {
+    color: #414638;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* Reverse layout */
+
+.ev-ing-reverse .ev-ing-feature-image {
+    order: 2;
+}
+
+.ev-ing-reverse .ev-ing-feature-content {
+    order: 1;
+}
+
+
+/* =========================================
+   4. VITAMIN E
+========================================= */
+
+.ev-ing-vitamin {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    min-height: 500px;
+    padding: 85px 9%;
+    gap: 10%;
+    align-items: center;
+    background: #f3f1e9;
+}
+
+.ev-ing-vitamin-image {
+    position: relative;
+    height: 390px;
+    overflow: hidden;
+}
+
+.ev-ing-vitamin-image img {
+    position: absolute;
+    inset: 0;
+    transition: transform .8s ease;
+}
+
+.ev-ing-vitamin-image:hover img {
+    transform: scale(1.035);
+}
+
+.ev-ing-vitamin-image::after {
+    content: "";
+    position: absolute;
+    inset: 50% 0 0;
+    background: linear-gradient(
+        0deg,
+        rgba(26, 32, 25, .65),
+        transparent
+    );
+}
+
+.ev-ing-vitamin-image-caption {
+    position: absolute;
+    z-index: 2;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f3f1e9;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.ev-ing-vitamin-image-caption span {
+    color: #c9b47f;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.ev-ing-vitamin-content {
+    max-width: 540px;
+}
+
+.ev-ing-vitamin-content h2 {
+    margin: 22px 0 0;
+    color: #343a2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 49px);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ev-ing-vitamin-content h2 em {
+    color: #9c8758;
+    font-weight: 400;
+}
+
+.ev-ing-vitamin-content > p {
+    color: #77786d;
+    font-size: 14px;
+    line-height: 2.1;
+}
+
+.ev-ing-scientific-name {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 30px;
+    padding: 18px 20px;
+    border: 1px solid rgba(179, 154, 97, .45);
+}
+
+.ev-ing-scientific-name span {
+    color: #9c8758;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.ev-ing-scientific-name strong {
+    color: #414638;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* =========================================
+   5. BOTANICAL COLLECTION
+========================================= */
+
+.ev-ing-botanicals {
+    padding: 115px 8% 120px;
+    background: #343a2f;
+}
+
+.ev-ing-botanicals-heading {
+    max-width: 750px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.ev-ing-botanicals-heading .ev-ing-kicker {
+    color: #c9b47f;
+}
+
+.ev-ing-botanicals-heading h2 {
+    margin: 23px 0;
+    color: #f3f1e9;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(40px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.ev-ing-botanicals-heading h2 em {
+    color: #c9b47f;
+    font-weight: 400;
+}
+
+.ev-ing-botanicals-heading > p {
+    max-width: 620px;
+    margin: 0 auto;
+    color: rgba(243, 241, 233, .68);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.ev-ing-botanical-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.ev-ing-botanical-card {
+    min-width: 0;
+    background: #f3f1e9;
+}
+
+.ev-ing-botanical-image {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+
+.ev-ing-botanical-image img {
+    transition: transform .8s ease;
+}
+
+.ev-ing-botanical-card:hover .ev-ing-botanical-image img {
+    transform: scale(1.04);
+}
+
+.ev-ing-botanical-image span {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 11px;
+    background: rgba(43, 49, 39, .82);
+    color: #f3f1e9;
+    font-family: Georgia, serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.ev-ing-botanical-info {
+    padding: 32px 28px 35px;
+}
+
+.ev-ing-card-kicker {
+    color: #9c8758;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+}
+
+.ev-ing-botanical-info h3 {
+    margin: 18px 0 8px;
+    color: #343a2f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.ev-ing-latin {
+    min-height: 40px;
+    margin: 0;
+    color: #9c8758;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-style: italic;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.ev-ing-card-line {
+    width: 40px;
+    height: 1px;
+    margin: 20px 0;
+    background: #b39a61;
+}
+
+.ev-ing-botanical-info > p:not(.ev-ing-latin) {
+    min-height: 120px;
+    margin: 0;
+    color: #77786d;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.ev-ing-card-product {
+    display: block;
+    margin-top: 27px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(179, 154, 97, .35);
+    color: #9c8758;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 1.2px;
+}
+
+
+/* =========================================
+   6. CLOSING
+========================================= */
+
+.ev-ing-closing {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    padding: 90px 8%;
+    overflow: hidden;
+    background-image: url("../images/nature.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.ev-ing-closing-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(37, 44, 35, .87);
+}
+
+.ev-ing-closing-content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+}
+
+.ev-ing-closing-content .ev-ing-kicker {
+    color: #c9b47f;
+}
+
+.ev-ing-closing-content h2 {
+    margin: 25px 0;
+    color: #f3f1e9;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 5vw, 55px);
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.ev-ing-closing-content h2 em {
+    color: #c9b47f;
+    font-weight: 400;
+}
+
+.ev-ing-closing-line {
+    width: 50px;
+    height: 1px;
+    margin: 30px auto;
+    background: #b39a61;
+}
+
+.ev-ing-closing-content > p {
+    max-width: 550px;
+    margin: 0 auto;
+    color: rgba(243, 241, 233, .78);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.ev-ing-closing-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b39a61;
+    color: #f3f1e9;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: color .3s ease;
+}
+
+.ev-ing-closing-link span {
+    color: #c9b47f;
+    font-size: 18px;
+    transition: transform .3s ease;
+}
+
+.ev-ing-closing-link:hover {
+    color: #c9b47f;
+}
+
+.ev-ing-closing-link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .ev-ing-botanical-grid {
+        gap: 17px;
+    }
+
+    .ev-ing-botanical-info {
+        padding: 28px 21px;
+    }
+
+    .ev-ing-botanical-image {
+        height: 290px;
+    }
+
+    .ev-ing-feature-content {
+        padding: 65px 9%;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .ev-ing-hero {
+        min-height: 560px;
+        height: 75vh;
+    }
+
+    .ev-ing-hero-content {
+        padding: 60px 8%;
+    }
+
+    .ev-ing-hero-content h1 {
+        font-size: 46px;
+    }
+
+    .ev-ing-hero-content p {
+        font-size: 14px;
+    }
+
+    .ev-ing-hero-bottom {
+        left: 8%;
+        right: 8%;
+        bottom: 22px;
+        font-size: 8px;
+    }
+
+    .ev-ing-intro {
+        padding: 80px 8%;
+    }
+
+    .ev-ing-intro h2 {
+        font-size: 42px;
+    }
+
+    .ev-ing-feature,
+    .ev-ing-vitamin {
+        grid-template-columns: 1fr;
+    }
+
+    .ev-ing-feature-image {
+        min-height: 430px;
+    }
+
+    .ev-ing-feature-content {
+        padding: 70px 9%;
+    }
+
+    .ev-ing-feature-content h2 {
+        font-size: 39px;
+    }
+
+    .ev-ing-reverse .ev-ing-feature-image,
+    .ev-ing-reverse .ev-ing-feature-content {
+        order: initial;
+    }
+
+    .ev-ing-vitamin {
+        padding: 75px 8%;
+        gap: 40px;
+    }
+
+    .ev-ing-vitamin-image {
+        height: 380px;
+    }
+
+    .ev-ing-vitamin-content h2 {
+        font-size: 40px;
+    }
+
+    .ev-ing-botanicals {
+        padding: 85px 7%;
+    }
+
+    .ev-ing-botanicals-heading {
+        margin-bottom: 45px;
+    }
+
+    .ev-ing-botanicals-heading h2 {
+        font-size: 42px;
+    }
+
+    .ev-ing-botanical-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        gap: 30px;
+    }
+
+    .ev-ing-botanical-image {
+        height: 360px;
+    }
+
+    .ev-ing-botanical-info {
+        padding: 30px;
+    }
+
+    .ev-ing-botanical-info > p:not(.ev-ing-latin) {
+        min-height: 0;
+    }
+
+    .ev-ing-closing {
+        min-height: 420px;
+        padding: 75px 8%;
+    }
+
+    .ev-ing-closing-content h2 {
+        font-size: 39px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .ev-ing-hero-content h1 {
+        font-size: 39px;
+    }
+
+    .ev-ing-intro h2,
+    .ev-ing-botanicals-heading h2 {
+        font-size: 36px;
+    }
+
+    .ev-ing-feature-content h2,
+    .ev-ing-vitamin-content h2 {
+        font-size: 35px;
+    }
+
+    .ev-ing-botanical-image {
+        height: 310px;
+    }
+
+    .ev-ing-closing-content h2 {
+        font-size: 33px;
+    }
+
+}

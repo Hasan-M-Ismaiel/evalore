@@ -1,0 +1,136 @@
+
+
+/* =========================================
+   EVALORE - MADE IN THE UAE
+========================================= */
+
+.evalore-uae-section {
+    padding: 100px 0;
+    background: #f8f7f1;
+}
+
+.uae-image {
+    position: relative;
+    height: 100%;
+    min-height: 490px;
+    overflow: hidden;
+    background: #d8d5c8;
+}
+
+.uae-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 490px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s ease;
+}
+
+.uae-image:hover img {
+    transform: scale(1.04);
+}
+
+.uae-image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px;
+    background: linear-gradient(
+        to top,
+        rgba(24, 27, 21, 0.78),
+        rgba(24, 27, 21, 0.12) 65%,
+        transparent
+    );
+}
+
+.uae-image-overlay span {
+    color: #e4d2a2;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
+}
+
+.uae-image-overlay h3 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.uae-content {
+    min-height: 490px;
+    padding: 65px 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #eeede5;
+}
+
+.uae-eyebrow {
+    color: #a18a54;
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    margin-bottom: 20px;
+}
+
+.uae-content h2 {
+    font-family: Georgia, serif;
+    color: #34372c;
+    font-size: 39px;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 23px;
+}
+
+.uae-divider {
+    width: 48px;
+    height: 1px;
+    background: #b29a61;
+    margin-bottom: 25px;
+}
+
+.uae-content p {
+    color: #77766d;
+    font-size: 13px;
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.uae-button {
+    align-self: flex-start;
+    margin-top: 13px;
+    padding: 15px 22px;
+    border: 1px solid #a58c52;
+    border-radius: 0;
+    color: #8b7442;
+    background: transparent;
+    font-size: 11px;
+    letter-spacing: 0.7px;
+    transition: all 0.3s ease;
+}
+
+.uae-button span {
+    margin-left: 12px;
+}
+
+.uae-button:hover {
+    background: #a58c52;
+    color: #fff;
+}
+
+.uae-bottom-note {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(120, 112, 88, 0.2);
+    color: #93886c;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.uae-bottom-note span {
+    margin-right: 8px;
+}

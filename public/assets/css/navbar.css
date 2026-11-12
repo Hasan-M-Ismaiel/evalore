@@ -1,0 +1,209 @@
+
+/* =========================================
+   EVALORE - LUXURY NAVBAR
+========================================= */
+
+.evalore-navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    background: rgba(43, 49, 39, 0.96);
+    border-bottom: 1px solid rgba(190, 166, 108, 0.22);
+    transition: all 0.35s ease;
+}
+
+
+.evalore-navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+
+.evalore-brand {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.evalore-brand img {
+    width: auto;
+    height: 62px;
+    object-fit: contain;
+}
+
+/* Navigation Links */
+
+
+.evalore-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.evalore-nav-links > li {
+    position: relative;
+}
+
+.evalore-nav-links > li > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    position: relative;
+    padding: 12px 0;
+    color: #e8e5d9;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.evalore-nav-links > li > a::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #c4aa70;
+    transition: width 0.3s ease;
+}
+
+.evalore-nav-links > li > a:hover,
+.evalore-nav-links > li > a.active {
+    color: #cbb47e;
+}
+
+.evalore-nav-links > li > a:hover::after,
+.evalore-nav-links > li > a.active::after {
+    width: 100%;
+}
+
+/* Dropdown */
+
+.evalore-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -15px;
+    min-width: 210px;
+    padding: 12px 0;
+    background: #30372d;
+    border-top: 2px solid #b39a61;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.evalore-dropdown:hover .evalore-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.evalore-dropdown-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #e8e5d9;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.evalore-dropdown-menu a:hover {
+    color: #cbb47e;
+    background: rgba(255, 255, 255, 0.04);
+    padding-left: 25px;
+}
+
+/* Mobile Toggle */
+
+.evalore-toggler {
+    display: none;
+    border: 1px solid rgba(195, 170, 112, 0.5);
+    background: transparent;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.evalore-toggler span {
+    display: block;
+    width: 23px;
+    height: 1px;
+    background: #cbb47e;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+    .evalore-navbar {
+        padding: 12px 0;
+    }
+
+    .evalore-brand img {
+        height: 55px;
+    }
+
+    .evalore-toggler {
+        display: block;
+    }
+
+    .evalore-navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .evalore-navbar .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    .evalore-nav-links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 15px 0 8px;
+    }
+
+    .evalore-nav-links > li > a {
+        display: flex;
+        justify-content: space-between;
+        padding: 13px 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .evalore-nav-links > li > a::after {
+        display: none;
+    }
+
+    .evalore-dropdown-menu {
+        position: static;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border-top: 1px solid rgba(195, 170, 112, 0.3);
+        background: rgba(0, 0, 0, 0.12);
+        padding: 5px 0;
+    }
+
+    .evalore-dropdown:hover .evalore-dropdown-menu {
+        display: block;
+    }
+
+    .evalore-dropdown-menu a {
+        padding-left: 20px;
+    }
+}
